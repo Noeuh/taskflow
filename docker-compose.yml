@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17-alpine         # Image officielle PostgreSQL 17, version légère
+    container_name: taskflow-db       # Nom du conteneur Docker
+    environment:
+      POSTGRES_DB: taskflow           # Nom de la base de données à créer
+      POSTGRES_USER: taskflow_user    # Utilisateur de la base
+      POSTGRES_PASSWORD: taskflow_pass # Mot de passe (ok pour le dev local uniquement)
+    ports:
+      - "5432:5432"                   # Expose le port 5432 sur ta machine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Garde les données même si le conteneur redémarre
+
+volumes:
+  postgres_data:                      # Volume nommé géré par Docker

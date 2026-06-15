@@ -1,5 +1,6 @@
 **/.env
-
+**/taskflow-projet-formation.md
+.vscode
 **/target/          # Dossier de compilation Java, se regénère automatiquement
 *.class
 *.jar

@@ -1,0 +1,23 @@
+**/.env
+
+**/target/          # Dossier de compilation Java, se regénère automatiquement
+*.class
+*.jar
+*.war
+
+!.mvn/wrapper/maven-wrapper.jar
+
+**/node_modules/    # Dépendances JS, se réinstallent avec pnpm install
+**/.nuxt/           # Cache de build Nuxt
+**/.output/         # Dossier de build Nuxt
+**/dist/
+
+.idea/              # IntelliJ IDEA
+.vscode/settings.json  # Préférences personnelles VS Code (pas partageable)
+*.iml
+
+.DS_Store           # Fichiers système macOS
+Thumbs.db           # Fichiers système Windows
+
+*.log
+**/logs/

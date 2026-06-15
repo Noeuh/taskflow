@@ -1,24 +1,24 @@
 **/.env
 **/taskflow-projet-formation.md
 .vscode
-**/target/          # Dossier de compilation Java, se regénère automatiquement
+**/target/
 *.class
 *.jar
 *.war
 
 !.mvn/wrapper/maven-wrapper.jar
 
-**/node_modules/    # Dépendances JS, se réinstallent avec pnpm install
-**/.nuxt/           # Cache de build Nuxt
-**/.output/         # Dossier de build Nuxt
+**/node_modules/
+**/.nuxt/
+**/.output/
 **/dist/
 
-.idea/              # IntelliJ IDEA
-.vscode/settings.json  # Préférences personnelles VS Code (pas partageable)
+.idea/
+.vscode/settings.json
 *.iml
 
-.DS_Store           # Fichiers système macOS
-Thumbs.db           # Fichiers système Windows
+.DS_Store
+Thumbs.db
 
 *.log
 **/logs/
